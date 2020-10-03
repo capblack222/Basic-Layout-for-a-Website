@@ -78,9 +78,12 @@ article p img{
 }
 
 @media (max-width: 700px){
+    body{
+        overflow-x: hidden;
+    }
     .line1, .line2{
         visibility: visible;
-        width: 100%;
+        max-width: 100%;
         background-color: teal;
         height: 5px;
     }
@@ -117,7 +120,7 @@ article p img{
         padding: 0px;
     }
     article p img{
-        width: 400px;
+        width: 300px;
         height: auto;
     }
 }

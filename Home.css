@@ -1,0 +1,123 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.section{
+    display: flex;
+    position: fixed;
+    width: 20%;
+    background-color: transparent;
+    float: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 88.5vh;
+    justify-content: center;
+}
+
+.section li{
+    list-style: none;
+    font-size: 26px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section li a{
+    text-decoration: none;
+    color: darkblue;
+    text-shadow: 1px 1px black;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 3px;
+}
+
+.section li h3{
+    text-shadow: 2px -2px 5px yellow;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+article{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+    background-color: transparent;
+    height: 85vh;
+    width: 80%;
+    padding-top: 60px;
+}
+
+article p{
+    padding-left: 60px;
+    padding-top: 20px;
+}
+
+article p img{
+    padding-top: 20px;
+    width: 550px;
+    height: auto;
+    border-radius: 0px 70px;
+    border-color: greenyellow;
+}
+
+.line1, .line2{
+    visibility: hidden;
+}
+
+@media (max-width: 1000px){
+    article p img{
+        width: 400px;
+        height: auto;
+    }
+    .section{
+        background-color: transparent;
+        width: 30%;
+    }
+}
+
+@media (max-width: 700px){
+    .line1, .line2{
+        visibility: visible;
+        width: 100%;
+        background-color: teal;
+        height: 5px;
+    }
+    .line1{
+        margin-top: 41.5vh;
+    }
+    .line2{
+        margin-top: 64vh;
+    }
+    .section{
+        position: absolute;
+        height: auto;
+        top: 53vh;
+        background-color: transparent;
+        width: 100%;
+        align-items: center;
+    }
+    .section li{
+        padding-bottom: 15px;
+    }
+    .section li h3{
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+    article{
+        float: none;
+        position: absolute;
+        top: 113vh;
+    }
+    article{
+        text-align: center;
+    }
+    article p{
+        padding: 0px;
+    }
+    article p img{
+        width: 400px;
+        height: auto;
+    }
+}
